@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.study.imageview_test">
+
+    <!--- icon : 아이콘 설정 & ctrl + click으로 이미지 확인 가능 -->
+    <!--- label : 앱이름으로 build -->
+    <!--- roundIcon : 앱 아이콘 테두리를 둥글게 처리함  -->
+    <!--- theme : 색의 symbol color setting -->
+    <!--- intent-filter : 처음 실행화면 설정-->
+    <!-- 사용되는 activity는 모두 추가해줘야함-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ImageView_test">
+        <activity android:name=".SubActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
