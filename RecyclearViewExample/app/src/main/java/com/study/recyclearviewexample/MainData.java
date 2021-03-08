@@ -5,12 +5,13 @@ public class MainData {
     private String tv_name;
     private String tv_content;
 
+    // MainData Class의 constructors
     public MainData(int iv_profile, String tv_name, String tv_content) {
         this.iv_profile = iv_profile;
         this.tv_name = tv_name;
         this.tv_content = tv_content;
     }
-
+    // class의 getter, setter
     public int getIv_profile() {
         return iv_profile;
     }
